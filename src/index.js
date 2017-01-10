@@ -17,11 +17,11 @@ const routes = (
       <Match pattern='/life' component={App}/>
       <Match pattern='/art' component={App}/>
       <Match pattern='/crestedbutte' component={App}/>
-      <Match pattern='/about' component={About}/>
-      <Match pattern='/login' component={UploadImage}/>
-      <Miss component={NotFound} />
     </div>
   </BrowserRouter>
 )
 
 ReactDOM.render( routes, document.getElementById('root') );
+      //<Match pattern='/about' component={About}/>
+      //<Match pattern='/login' component={UploadImage}/>
+      //<Miss component={NotFound} />
