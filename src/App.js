@@ -27,7 +27,7 @@ import Header from './components/Header';
 //import fb from './firebase';
 import './styles/App.css';
 
-const database = fb.database();
+//const database = fb.database();
 
 export default class App extends Component {
   constructor() {
