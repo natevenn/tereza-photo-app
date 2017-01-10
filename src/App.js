@@ -25,7 +25,7 @@ import Header from './components/Header';
 //import UploadImage from './components/UploadImage';
 //import Pictures from './components/Pictures';
 //import fb from './firebase';
-import './styles/App.css';
+//import './styles/App.css';
 
 //const database = fb.database();
 
