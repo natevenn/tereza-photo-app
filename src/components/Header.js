@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
-import '../styles/Header.css';
+//import '../styles/Header.css';
 //import watermark from '../styles/images/t-watermark3.png'
 
 export default class Header extends Component {
