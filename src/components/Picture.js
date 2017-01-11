@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/image.css';
+import '../styles/Image.css';
 
 export default class Picture extends Component {
   componentDidMount() {
