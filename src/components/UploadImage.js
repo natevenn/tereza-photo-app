@@ -27,23 +27,23 @@ export default class ImageUploader extends Component {
         token: this.props.userToken
       });
 
-      var PostImageRequest = new Request(apiRequest, {
-        method: "POST",
-        headers: {
-          "Accept": "application/json",
-          "Content-Type": "application/json"
-        },
-        body: data
-      })
+      //var PostImageRequest = new Request(apiRequest, {
+        //method: "POST",
+        //headers: {
+          //"Accept": "application/json",
+          //"Content-Type": "application/json"
+        //},
+        //body: data
+      //})
 
-      fetch(PostImageRequest
-      ).then(function(response) {
-        return response.json();
-      }).then(function(data) {
-        updateState(data)
-      }).catch(function(e) {
-        console.log(e)
-      });
+      //fetch(PostImageRequest
+      //).then(function(response) {
+        //return response.json();
+      //}).then(function(data) {
+        //updateState(data)
+      //}).catch(function(e) {
+        //console.log(e)
+      //});
     })
 
     function updateState(imageUrl) {
