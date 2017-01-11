@@ -16,7 +16,7 @@ export default class Pictures extends Component {
   this.getNextImage = this.getNextImage.bind(this)
   }
 
-  handleClick(key) {
+  handlePictureClick(key) {
     var images = this.props.images
     var imgKeys = Object.keys(images)
     var index = imgKeys.indexOf(key)
@@ -47,7 +47,7 @@ export default class Pictures extends Component {
       <div>
         {imgKeys.map((key) => {
           var imageUrl = this.props.images[key].imageUrl
-          return <Picture handleClick={this.handleClick} key={key} imgKey={key} imageUrl={imageUrl} />
+          return <Picture handlePictureClick={this.handleClick} key={key} imgKey={key} imageUrl={imageUrl} />
           })}
       </div>
     )
