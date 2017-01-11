@@ -14,6 +14,8 @@ export default class Pictures extends Component {
 
   this.handlePictureClick = this.handlePictureClick.bind(this)
   this.getNextImage = this.getNextImage.bind(this)
+  this.getLastImage = this.getLastImage.bind(this)
+  this.exitCarousel = this.exitCarousel.bind(this)
   }
 
   handlePictureClick(key) {
