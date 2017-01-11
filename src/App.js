@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 //import UploadImage from './components/UploadImage';
-//import Pictures from './components/Pictures';
-//import fb from './firebase';
+import Pictures from './components/Pictures';
+import fb from './firebase';
 import './styles/app.css';
 
 //const database = fb.database();
@@ -35,8 +35,8 @@ export default class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Pictures images={this.state.images}/>
       </div>
     );
   }
 }
-        //<Pictures images={this.state.images}/>
