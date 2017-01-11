@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
-//import '../styles/Header.css';
+import '../styles/header.css';
 //import watermark from '../styles/images/t-watermark3.png'
         //<img src={watermark} className="header-logo" />
 
