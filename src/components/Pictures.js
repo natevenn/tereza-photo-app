@@ -34,12 +34,30 @@ export default class Pictures extends Component {
     this.setState({currentIndex: index, imageUrl: imageUrl})
   }
 
+  getLastImage() {
+    var index = this.state.currentIndex
+    var images = this.props.images
+    var imgKeys = Object.keys(images)
+    index = index > 0 + 1 ? index - 1 : 0
+    var key = imgKeys[index]
+    var imageUrl = images[key].imageUrl
+    this.setState({currentIndex: index, imageUrl: imageUrl})
+  }
+
+  exitCarousel() {
+    this.setState({isClicked: false})
+  }
+
   render() {
     var imgKeys = Object.keys(this.props.images)
 
     if(this.state.isClicked) {
       return (
-        <Carousel imageUrl={this.state.imageUrl} getNextImage={this.getNextImage}/>
+        <Carousel imageUrl={this.state.imageUrl}
+          getNextImage={this.getNextImage}
+          getLastImage={this.getLastImage}
+          exitCarousel={this.exitCarousel}
+          />
       )
     }
 
