@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Picture from './Picture';
-//import Carousel from './Carousel';
+import Carousel from './Carousel';
 
 export default class Pictures extends Component {
   constructor() {
@@ -39,7 +39,7 @@ export default class Pictures extends Component {
 
     if(this.state.isClicked) {
       return (
-        //<Carousel imageUrl={this.state.imageUrl} getNextImage={this.getNextImage}/>
+        <Carousel imageUrl={this.state.imageUrl} getNextImage={this.getNextImage}/>
       )
     }
 

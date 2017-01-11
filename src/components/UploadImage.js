@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-//import fb from '../firebase';
-//import '../styles/admin.css';
+import fb from '../firebase';
+import '../styles/admin.css';
 
 const storageRef = fb.storage().ref();
 //const apiRequest = 'http://127.0.0.1:8080/api/v1/images'

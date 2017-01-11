@@ -1,0 +1,65 @@
+.outer-carousel-div {
+  display: inline-block;
+  position: relative;
+}
+.carousel-div {
+  display: inline-block;
+  width: 900px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.right-arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  font-size: 83px;
+  top: 50%;
+  right: 10px;
+  color: white;
+  outline: none;
+  opacity: .6;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+  opacity: .8;
+  text-decoration: none;
+}
+
+.left-arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  font-size: 83px;
+  top: 50%;
+  left: 10px;
+  color: white;
+  outline: none;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.exitButton {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  color: #999;
+  cursor: pointer;
+  opacity: .7;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 5%;
+}
+
