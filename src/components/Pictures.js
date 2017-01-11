@@ -12,7 +12,7 @@ export default class Pictures extends Component {
       imageUrl: ''
     }
 
-  this.handleClick = this.handleClick.bind(this)
+  this.handlePictureClick = this.handlePictureClick.bind(this)
   this.getNextImage = this.getNextImage.bind(this)
   }
 
