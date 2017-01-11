@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router';
 import '../styles/header.css';
-//import watermark from '../styles/images/t-watermark3.png'
-        //<img src={watermark} className="header-logo" />
+import watermark from '../styles/images/t-watermark3.png'
 
 export default class Header extends Component {
   render() {
     return (
       <div className="Header">
+        <img src={watermark} className="header-logo" />
         <div className="navbar">
           <ul>
             <li className="collection">
