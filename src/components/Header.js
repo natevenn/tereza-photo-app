@@ -3,49 +3,29 @@ import {Link} from 'react-router';
 import '../styles/header.css';
 import watermark from '../styles/images/t-watermark3.jpg'
 
+const collections = ["People", "Places", "Life", "Art", "Crested Butte", "About"]
+
 export default class Header extends Component {
+
+
+  renderList() {
+    return collections.map((name) => {
+      return <li className="collection">
+        <Link
+          activeClassName="highlight" to={`${name}`}>
+          {name}
+        </Link>
+      </li>
+    })
+  }
+
   render() {
     return (
       <div className="Header">
         <img src={watermark} className="header-logo" />
         <div className="navbar">
           <ul>
-            <li className="collection">
-              <Link activeStyle={{color: "#333333"}}
-                activeClassName="highlight" to="/people">
-                people
-              </Link>
-            </li>
-            <li className="collection">
-              <Link activeStyle={{color: "#333333"}}
-                activeClassName="highlight" to="/places">
-                places
-              </Link>
-            </li>
-            <li className="collection">
-              <Link activeStyle={{color: "#333333"}}
-                activeClassName="highlight" to="/life">
-                life
-              </Link>
-            </li>
-            <li className="collection">
-              <Link activeStyle={{color: "#333333"}}
-                activeClassName="highlight" to="/art">
-                art
-              </Link>
-            </li>
-            <li className="collection">
-              <Link activeStyle={{color: "#333333"}}
-                activeClassName="highlight" to="/crestedbutte">
-                crested butte
-              </Link>
-            </li>
-            <li className="collection">
-              <Link activeStyle={{color: "#333333"}}
-                activeClassName="highlight" to="/about">
-                about
-              </Link>
-            </li>
+            {this.renderList()}
           </ul>
         </div>
       </div>
