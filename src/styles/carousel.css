@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-a:hover {
+.outer-carousel-div.a:hover {
   color: white;
   opacity: .8;
   text-decoration: none;
