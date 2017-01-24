@@ -6,13 +6,20 @@ const storageRef = fb.storage().ref();
 const database = fb.database();
 
 export default class ImageUploader extends Component {
+  constructor() {
+    super()
+    this.state = {
+      route: window.location.pathname
+    }
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
 
   handleSubmit(e) {
     e.preventDefault()
     var file = this.imageUpload.files[0]
-    var group = this.groupName.value
+    var params = this.state.route
     var imageRef = storageRef.child(file.name)
-    var dbRef = database.ref('pictures/' + group )
+    var dbRef = database.ref('pictures' + params )
     imageRef.put(file).then((snapshot) => {
       var url = snapshot.a.downloadURLs[0]
       var newImageRef = dbRef.push()
@@ -24,24 +31,18 @@ export default class ImageUploader extends Component {
     })
 
     this.imageUpload.value = ""
-    this.groupName.value = "Select a picture group"
-  }
-
-  handleSelect() {
-    var name = this.groupName.value
-    console.log('name', name)
   }
 
   render() {
     return (
       <div>
         <input ref={(ref) => this.imageUpload = ref} type='file' name='image-file' />
-        <input onClick={this.handleSubmit} type='submit' />
+        <input onClick={this.handleSubmit.bind(this)} type='submit' />
       </div>
     )
   }
 }
 
 ImageUploader.contextTypes = {
-  router: React.PropTypes.object
+  router: React.PropTypes.object.isRequired
 }

@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
 import '../styles/image.css';
 
+var style = {}
 export default class Picture extends Component {
-  componentDidMount() {
-    var img = this.img
-    if(this.isPortrait(img)) {
-      this.imgWidth.style.width = "300px"
+  constructor() {
+    super()
+
+    this.state = {
+      style: {width: 400}
     }
   }
+
+  componentWillMount() {
+    const img = document.createElement('img');
+    img.src = this.props.imageUrl
+
+    if(this.isPortrait(img)) {
+      this.state.style = {width: 342}
+      console.log('is portrait')
+    }
+  }
+  //componentDidMount() {
+    //var img = this.img
+    //if(this.isPortrait(img)) this.imgWidth.style.width = "300px"
+    //}
 
   isPortrait(img) {
     var w = img.naturalWidth || img.width
@@ -30,7 +46,7 @@ export default class Picture extends Component {
     }
 
     return (
-      <div ref={(width) => this.imgWidth = width} className="img-div">
+      <div ref={(width) => this.imgWidth = width} style={this.state.style} className="img-div">
         <img ref={(img) => this.img = img}
           className='img' src={this.props.imageUrl}
           role='presentation'
