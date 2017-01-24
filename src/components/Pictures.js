@@ -51,7 +51,7 @@ export default class Pictures extends Component {
   }
 
   render() {
-    if(this.props.images) {
+    if(this.props.images !== null) {
     var imgKeys = Object.keys(this.props.images)
     }
 
