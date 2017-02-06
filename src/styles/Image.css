@@ -4,14 +4,15 @@
   border: 1px solid #ECEDE8;
   margin: 30px 30px;
   overflow: hidden;
+  border-style: none;
   /*width: 362px;*/
+  /*height: 266px;*/
   vertical-align: top;
 }
 
 .img {
   max-width: 100%;
   height: auto;
-  width: auto\9;
 }
 
 .deleteImage {

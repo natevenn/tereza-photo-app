@@ -7,7 +7,7 @@ export default class Picture extends Component {
     super()
 
     this.state = {
-      style: {width: 400}
+      style: {width: 400, height: 266}
     }
   }
 
@@ -16,8 +16,9 @@ export default class Picture extends Component {
     img.src = this.props.imageUrl
 
     if(this.isPortrait(img)) {
-      this.state.style = {width: 342}
+      this.state.style = {width: 342, height: 500}
       console.log('is portrait')
+      console.log('state', this.state)
     }
   }
   //componentDidMount() {
