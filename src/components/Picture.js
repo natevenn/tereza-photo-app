@@ -14,17 +14,12 @@ export default class Picture extends Component {
   componentWillMount() {
     const img = document.createElement('img');
     img.src = this.props.imageUrl
-
-    if(this.isPortrait(img)) {
-      this.state.style = {width: 342, height: 500}
-      console.log('is portrait')
-      console.log('state', this.state)
+    img.onload = () => {
+      if(this.isPortrait(img)) {
+        this.setState({style: {width: 342, height: 500}})
+      }
     }
   }
-  //componentDidMount() {
-    //var img = this.img
-    //if(this.isPortrait(img)) this.imgWidth.style.width = "300px"
-    //}
 
   isPortrait(img) {
     var w = img.naturalWidth || img.width
