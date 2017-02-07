@@ -42,8 +42,9 @@ export default class Picture extends Component {
     }
 
     return (
-      <div ref={(width) => this.imgWidth = width} style={this.state.style} className="img-div">
+      <div className="img-div">
         <img ref={(img) => this.img = img}
+          style={this.state.style}
           className='img' src={this.props.imageUrl}
           role='presentation'
           onClick={this.handleClick.bind(this)}

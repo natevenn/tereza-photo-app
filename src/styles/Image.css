@@ -1,18 +1,19 @@
 .img-div {
   display: inline-block;
   position: relative;
-  border: 1px solid #ECEDE8;
-  margin: 30px 30px;
   overflow: hidden;
   border-style: none;
-  /*width: 362px;*/
-  /*height: 266px;*/
-  vertical-align: top;
+  width: 33%;
+  height: 356px;
 }
 
 .img {
-  max-width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .deleteImage {
