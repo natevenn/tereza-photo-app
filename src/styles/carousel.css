@@ -36,14 +36,20 @@
   cursor: pointer;
 }
 
-.outer-carousel-div, button:hover {
+.left-arrow:hover, .right-arrow:hover {
   color: #999;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  opacity: 0;
 }
 
 .left-arrow {
   position: absolute;
   background: transparent;
   border: none;
+  line-height: 1.6em;
   font-size: 83px;
   top: 15%;
   bottom: 15%;
@@ -66,5 +72,5 @@
   right: 5px;
   top: 5px;
   width: 5%;
+  outline: none;
 }
-
