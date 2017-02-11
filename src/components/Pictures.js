@@ -24,6 +24,7 @@ export default class Pictures extends Component {
     var index = imgKeys.indexOf(key)
     var imageUrl = images[key].imageUrl
     this.setState({isClicked: true, currentIndex: index, imageUrl: imageUrl})
+    this.props.toggleHeader(false)
   }
 
   getNextImage() {
@@ -48,6 +49,7 @@ export default class Pictures extends Component {
 
   exitCarousel() {
     this.setState({isClicked: false})
+    this.props.toggleHeader(true)
   }
 
   render() {

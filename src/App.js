@@ -12,15 +12,16 @@ export default class App extends Component {
     super()
 
     this.state = {
-      images: []
+      images: [],
+      activeHeader: true
     }
 
     this.addImage = this.addImage.bind(this);
+    this.toggleHeader = this.toggleHeader.bind(this);
   }
 
   componentWillMount() {
     let params = this.props.pathname
-    console.log('params', params)
     let dbRef = database.ref('pictures' + params)
     dbRef.once('value').then((snapshot) => {
       this.setState({images: snapshot.val()})
@@ -32,11 +33,15 @@ export default class App extends Component {
     this.setState({images: this.state.images})
   }
 
+  toggleHeader(condition) {
+    this.setState({activeHeader: condition})
+  }
+
   render() {
     return (
       <div className="App">
-        <Header />
-        <Pictures images={this.state.images} />
+        <Header activeHeader={this.state.activeHeader}/>
+        <Pictures images={this.state.images} toggleHeader={this.toggleHeader} />
       </div>
     );
   }

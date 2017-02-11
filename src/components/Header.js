@@ -20,8 +20,9 @@ export default class Header extends Component {
   }
 
   render() {
+    var className = this.props.activeHeader ? 'activeHeader' : 'hiddenHeader'
     return (
-      <div className="Header">
+      <div className={className}>
         <img src={watermark} className="header-logo" />
         <div className="navbar">
           <ul>

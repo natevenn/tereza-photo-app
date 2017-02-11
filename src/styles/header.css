@@ -1,4 +1,4 @@
-.Header {
+.activeHeader {
   background-color: white;
   height: 150px;
   padding: 20px;
@@ -43,4 +43,8 @@ a:hover, a:active {
 
 .highlight {
   border-bottom: 1px solid #333333;
+}
+
+.hiddenHeader {
+  display: none;
 }
