@@ -3,17 +3,16 @@
   background-color: white;
   height: 100%;
   width: 90%;
-  margin: 5%;
 }
 
 .header-logo {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
 .navbar {
   display: inline-block;
-  margin-top: 6%;
+  margin-top: 2%;
 }
 
 ul {
