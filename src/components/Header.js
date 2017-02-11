@@ -23,7 +23,9 @@ export default class Header extends Component {
     var className = this.props.activeHeader ? 'activeHeader' : 'hiddenHeader'
     return (
       <div className={className}>
-        <img src={watermark} className="header-logo" />
+        <a href='/'>
+          <img src={watermark} className="header-logo" />
+        </a>
         <div className="navbar">
           <ul>
             {this.renderList()}
