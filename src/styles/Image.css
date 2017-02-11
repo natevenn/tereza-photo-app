@@ -7,7 +7,20 @@
   height: 356px;
 }
 
-.img {
+.img-landscape {
+  width: 83%;
+  height: 67%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.img-portrait {
+  width: 236px;
+  height: 353px;
   position: absolute;
   top: 0;
   bottom: 0;

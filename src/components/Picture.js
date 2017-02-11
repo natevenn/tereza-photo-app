@@ -7,7 +7,7 @@ export default class Picture extends Component {
     super()
 
     this.state = {
-      style: {width: 353, height: 236}
+      className: 'img-landscape'
     }
   }
 
@@ -16,7 +16,8 @@ export default class Picture extends Component {
     img.src = this.props.imageUrl
     img.onload = () => {
       if(this.isPortrait(img)) {
-        this.setState({style: {width: 236, height: 353}})
+        //this.setState({style: {width: 236, height: 353}})
+        this.setState({className: 'img-portrait'})
       }
     }
   }
@@ -44,8 +45,7 @@ export default class Picture extends Component {
     return (
       <div className="img-div">
         <img ref={(img) => this.img = img}
-          style={this.state.style}
-          className='img' src={this.props.imageUrl}
+          className={this.state.className} src={this.props.imageUrl}
           role='presentation'
           onClick={this.handleClick.bind(this)}
         />
