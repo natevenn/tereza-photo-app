@@ -7,7 +7,7 @@ export default class Carousel extends Component {
     var rightArrow = ">"
     var exitButton = "X"
     return (
-      <div className="outer-carousel-div">
+      <div className="carousel-div">
         <img className="carousel-img" src={this.props.imageUrl} role='presentation' />
         <button onClick={this.props.getLastImage} className="left-arrow">
           {leftArrow}
