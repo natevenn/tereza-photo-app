@@ -9,7 +9,6 @@
 
 .img-landscape {
   width: 83%;
-  height: 67%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -20,7 +19,6 @@
 
 .img-portrait {
   width: 57%;
-  height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
