@@ -7,10 +7,9 @@ export default class Picture extends Component {
     super()
 
     this.state = {
-      style: {width: 0.83, height: 0.67}
+      style: {width: 353, height: 236}
     }
   }
-      //style: {width: 353, height: 236}
 
   componentWillMount() {
     const img = document.createElement('img');
