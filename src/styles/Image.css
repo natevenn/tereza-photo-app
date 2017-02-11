@@ -7,8 +7,7 @@
   height: 356px;
 }
 
-.img-landscape {
-  width: 83%;
+.img-landscape, .img-portrait {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -17,14 +16,12 @@
   margin: auto;
 }
 
+.img-landscape {
+  width: 83%;
+}
+
 .img-portrait {
   width: 57%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 .deleteImage {
