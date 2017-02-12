@@ -22,13 +22,14 @@ ul {
   line-height: 1.6em;
   letter-spacing: 1px;
   white-space: nowrap;
-  width: 100%;
+  width: 50%;
+  padding: 0;
 }
 
 .collection {
   display: inline-block;
   padding: 10% 0;
-  margin-right: 8%;
+  margin-right: 6%;
   font-size: 87.5%;
 }
 

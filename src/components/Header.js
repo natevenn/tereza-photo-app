@@ -26,11 +26,9 @@ export default class Header extends Component {
         <a href='/'>
           <img src={watermark} className="header-logo" />
         </a>
-        <div className="navbar">
           <ul>
             {this.renderList()}
           </ul>
-        </div>
       </div>
     )
   }
