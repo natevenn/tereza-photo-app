@@ -12,47 +12,44 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-
-.right-arrow {
+.right-arrow, .left-arrow {
   position: absolute;
   border: none;
   background: transparent;
-  color: white;
+  color: #999;
   font-weight: lighter;
-  font-size: 83px;
+  font-size: 50px;
   top: 15%;
   bottom: 15%;
-  padding-left: 50%;
-  right: 10px;
   outline: none;
   opacity: .4;
   cursor: pointer;
 }
 
-.left-arrow:hover, .right-arrow:hover {
-  color: #999;
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -ms-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  opacity: 0;
+.right-arrow {
+  right: 2%;
+  padding-left: 25%;
 }
 
 .left-arrow {
-  position: absolute;
-  background: transparent;
-  border: none;
-  font-weight: lighter;
-  font-size: 83px;
-  top: 15%;
-  bottom: 15%;
-  padding-right: 50%;
-  left: 10px;
-  color: white;
-  outline: none;
-  opacity: .4;
-  cursor: pointer;
+  padding-right: 25%;
+  left: 2%;
 }
+
+@media only screen and (min-width: 1024px) {
+  .right-arrow, .left-arrow {
+    color: white;
+    font-size: 83px;
+  }
+  .left-arrow:hover, .right-arrow:hover {
+    color: #999;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+  }
+}
+
 
 .exitButton {
   background: transparent;
