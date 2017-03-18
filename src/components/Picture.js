@@ -38,9 +38,9 @@ export default class Picture extends Component {
   }
 
   render() {
-    if(this.props.username && this.props.userToken) {
+    //if(this.props.username && this.props.userToken) {
       var button = <a className='deleteImage' onClick={this.handleDelete.bind(this)}>X</a>
-    }
+    //}
 
     return (
       <div className="img-div">
