@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Picture from './Picture';
+import UploadImage from './UploadImage';
 import Carousel from './Carousel';
 
 export default class Pictures extends Component {
@@ -67,6 +68,7 @@ export default class Pictures extends Component {
 
     return (
       <div>
+        <UploadImage />
         {imgKeys.map((key) => {
           var imageUrl = this.props.images[key].imageUrl
           return <Picture handlePictureClick={this.handlePictureClick} key={key} imgKey={key} imageUrl={imageUrl} />
