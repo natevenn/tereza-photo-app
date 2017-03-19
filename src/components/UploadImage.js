@@ -17,7 +17,7 @@ export default class ImageUploader extends Component {
   handleSubmit(e) {
     e.preventDefault()
     var file = this.imageUpload.files[0]
-    var params = this.state.route
+    var params = this.state.route === '/' ? '/home' : this.state.route
     var imageRef = storageRef.child(file.name)
     var dbRef = database.ref('pictures' + params )
     imageRef.put(file).then((snapshot) => {
