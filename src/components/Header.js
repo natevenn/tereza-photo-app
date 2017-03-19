@@ -13,7 +13,7 @@ export default class Header extends Component {
       let urlName = name === 'Crested Butte' ? 'crested-butte' : name.toLowerCase()
       return <li className="collection">
         <Link
-          activeClassName="highlight" to={`${urlName)}`}>
+          activeClassName="highlight" to={`${urlName}`}>
           {name}
         </Link>
       </li>
