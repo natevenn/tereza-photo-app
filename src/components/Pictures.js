@@ -68,10 +68,14 @@ export default class Pictures extends Component {
 
     return (
       <div>
-        <UploadImage />
         {imgKeys.map((key) => {
           var imageUrl = this.props.images[key].imageUrl
-          return <Picture handlePictureClick={this.handlePictureClick} key={key} imgKey={key} imageUrl={imageUrl} />
+          return <Picture
+            handlePictureClick={this.handlePictureClick}
+            key={key}
+            imgKey={key}
+            imageUrl={imageUrl}
+          />
           })}
       </div>
     )

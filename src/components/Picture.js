@@ -33,13 +33,8 @@ export default class Picture extends Component {
     this.props.handlePictureClick(key)
   }
 
-  handleDelete() {
-    this.props.deleteImage(this.props.imageId)
-  }
-
   render() {
     //if(this.props.username && this.props.userToken) {
-      var button = <a className='deleteImage' onClick={this.handleDelete.bind(this)}>X</a>
     //}
 
     return (
@@ -49,7 +44,6 @@ export default class Picture extends Component {
           role='presentation'
           onClick={this.handleClick.bind(this)}
         />
-        {button}
       </div>
     )
   }

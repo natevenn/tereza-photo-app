@@ -22,7 +22,6 @@ export default class App extends Component {
 
   componentWillMount() {
     let params = this.props.pathname === '/' ? '/home' : this.props.pathname
-    console.log('params', params)
     let dbRef = database.ref('pictures' + params)
     dbRef.once('value').then((snapshot) => {
       this.setState({images: snapshot.val()})
