@@ -1,0 +1,41 @@
+.about-container {
+  margin: auto;
+  width: 60%;
+}
+
+.head-shot {
+  margin-top: 5%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+}
+
+.about-description {
+  text-transform: uppercase;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  padding: 0;
+  margin-top: 8%;
+  color: #999;
+  text-align: center;
+}
+
+.about-description-div {
+  margin-top: 5%;
+  width: 90%;
+}
+
+.about-contributions {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #999;
+}
+
+.social-media-link {
+  text-decoration: underline !important;
+}
