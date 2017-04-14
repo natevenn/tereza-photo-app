@@ -41,6 +41,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <Header activeHeader={this.state.activeHeader}/>
+        <ImageUploader />
         <Pictures images={this.state.images} toggleHeader={this.toggleHeader} />
       </div>
     );
