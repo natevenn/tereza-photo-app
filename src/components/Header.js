@@ -3,14 +3,14 @@ import {Link} from 'react-router';
 import '../styles/header.css';
 import watermark from '../styles/images/t-watermark3.jpg'
 
-const collections = ["People", "Places", "Life", "Art", "Crested Butte", "About"]
+const collections = ["People", "Places", "Life", "Art", "Prints", "About"]
 
 export default class Header extends Component {
 
 
   renderList() {
     return collections.map((name) => {
-      let urlName = name === 'Crested Butte' ? 'crested-butte' : name.toLowerCase()
+      let urlName = name === 'Prints' ? 'Prints' : name.toLowerCase()
       return <li className="collection">
         <Link
           activeClassName="highlight" to={`${urlName}`}>
