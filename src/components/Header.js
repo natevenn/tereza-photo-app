@@ -10,7 +10,8 @@ export default class Header extends Component {
 
   renderList() {
     return collections.map((name) => {
-      let urlName = name === 'Prints' ? 'Prints' : name.toLowerCase()
+      //let urlName = name === 'Prints' ? 'crested-butte' : name.toLowerCase()
+      let urlName = name.toLowerCase()
       return <li className="collection">
         <Link
           activeClassName="highlight" to={`${urlName}`}>

@@ -15,7 +15,7 @@ const routes = (
       <Match pattern='/places' component={App}/>
       <Match pattern='/life' component={App}/>
       <Match pattern='/art' component={App}/>
-      <Match pattern='/crested-butte' component={App}/>
+      <Match pattern='/prints' component={App}/>
       <Match pattern='/about' component={About}/>
       <Miss component={NotFound} />
     </div>
