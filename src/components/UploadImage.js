@@ -21,7 +21,7 @@ export default class ImageUploader extends Component {
     if(this.state.route === '/') {
       params = '/home'
     }else if(this.state.route === 'prints') {
-      params = 'crested-butte'
+      params = '/crested-butte'
     }else{
       params = this.state.route
     }
