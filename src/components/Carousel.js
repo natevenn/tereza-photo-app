@@ -16,7 +16,7 @@ export default class Carousel extends Component {
           {rightArrow}
         </button>
         <button onClick={this.props.exitCarousel} className='exitButton'>
-          <i className="fa fa-fw text-danger m-r-1">Back to Gallery</i>
+         Back to Gallery
         </button>
       </div>
     )

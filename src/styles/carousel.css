@@ -54,7 +54,6 @@
 .exitButton {
   background: transparent;
   border: none;
-  width: 5px;
   font-size: 100%;
   color: #999;
   cursor: pointer;
@@ -62,6 +61,6 @@
   position: absolute;
   left: 5px;
   top: 5px;
-  width: 5%;
+  width: 220px !important;
   /*outline: none;*/
 }
