@@ -54,13 +54,14 @@
 .exitButton {
   background: transparent;
   border: none;
+  width: 5px;
   font-size: 100%;
   color: #999;
   cursor: pointer;
   opacity: .7;
   position: absolute;
-  right: 5px;
+  left: 5px;
   top: 5px;
   width: 5%;
-  outline: none;
+  /*outline: none;*/
 }
