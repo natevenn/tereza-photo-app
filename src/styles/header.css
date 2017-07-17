@@ -51,3 +51,21 @@ a:hover, a:active {
 .hiddenHeader {
   display: none;
 }
+
+.online-store-link {
+  color: white !important;
+  text-transform: uppercase;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding: 0;
+  margin-top: 8%;
+}
+
+.online-store-button {
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  background: #211732;
+}
+
